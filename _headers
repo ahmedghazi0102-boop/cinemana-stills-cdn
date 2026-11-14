@@ -1,11 +1,15 @@
+/stills/index.json
+  Cache-Control: public, max-age=300, must-revalidate
+  Access-Control-Allow-Origin: *
 /stills/meta.json
-  Cache-Control: public, max-age=60, s-maxage=300, must-revalidate
+  Cache-Control: public, max-age=300, must-revalidate
   Access-Control-Allow-Origin: *
-
+/stills/blobs/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
 /stills/*
-  Cache-Control: public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800
+  Cache-Control: public, max-age=3600, must-revalidate
   Access-Control-Allow-Origin: *
-
 /frames/*
-  Cache-Control: public, max-age=2592000, s-maxage=31536000, immutable
+  Cache-Control: public, max-age=31536000, immutable
   Access-Control-Allow-Origin: *
